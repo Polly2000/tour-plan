@@ -1,4 +1,9 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-/*font-family: 'Mulish', sans-serif;*/
+
+body {
+  font-family: 'Mulish', sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

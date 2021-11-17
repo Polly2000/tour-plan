@@ -405,6 +405,7 @@ body {
   height: 100%;
   border: none;
   background-color: #ec1f46;
+  cursor: pointer;
 }
 
 .user {

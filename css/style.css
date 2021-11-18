@@ -503,6 +503,9 @@ img {
   .navbar-top {
     padding: 30px 0;
   }
+  .navbar-top__menu-button {
+    display: none;
+  }
   .navbar-menu {
     padding: 22px 0;
   }
@@ -539,6 +542,7 @@ img {
             flex-direction: column;
     width: 16px;
     height: 11px;
+    padding: 0;
     border: none;
     background-color: #fff;
     cursor: pointer;

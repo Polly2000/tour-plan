@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Best Tour Plan - Hotel Booking</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -16,6 +16,8 @@
 
   <!-- style  -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/adaptive.css">
+  <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
 
@@ -77,10 +79,55 @@
       </div>
     </div>
     <!--/.navbar-bottom-->
-
-
   </header>
   <!-- /.navbar -->
+
+  <nav class="breadcumb">
+    <div class="container">
+      <ul class="breadcrumb-list">
+        <li class="breadcrumb-list__item">
+          <a href="#" class="breadcrumb-list__link">Home</a>
+        </li>
+        <li class="breadcrumb-list__item">
+          <a href="#" class="breadcrumb-list__link">Flash Offers</a>
+        </li>
+        <li class="breadcrumb-list__item">
+          Grand Hilton Hotel
+        </li>
+      </ul>
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!-- /.breadcumb -->
+
+  <section class="hotel">
+    <div class="container">
+      <div class="hotel-info">
+        <div class="hotel-info__text">
+          <div class="hotel-wrapper">
+            <div class="stars">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+            </div>
+            <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
+            <span class="offer hotel-info__offer">Flash Offer</span>
+          </div>
+          <p class="hotel-description hotel-info__description">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</p>
+        </div>
+        <!-- /.hotel-info__text -->
+        <div class="rating hotel-info__rating">
+          <span class="rating__text">User Rating</span>
+          <span class="rating__counter">4.5/5</span>
+        </div>
+        <!-- /.hotel-info__rating -->
+      </div>
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.hotel -->
 
 </body>
 </html>

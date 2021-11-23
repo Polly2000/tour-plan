@@ -10,5 +10,10 @@ const swiper = new Swiper('.swiper', {
   },
 
   effect: 'coverflow',
+  
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 
 });

@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Best Tour Plan - Hotel Booking</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
 
   <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +18,10 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/adaptive.css">
   <link rel="stylesheet" href="normalize.css">
+
+  <!-- slider -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
 </head>
 <body>
 
@@ -124,10 +128,42 @@
         </div>
         <!-- /.hotel-info__rating -->
       </div>
+      <!-- /.hotel-info -->
+      <div class="hotel-grid">
+        <div class="slider">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="img/slide.jpg" alt="slide">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slide.jpg" alt="slide">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slide.jpg" alt="slide">
+              </div>
+              ...
+            </div>
+          
+            <!-- If we need navigation buttons -->
+            <button class="slider-button slider-button_prev"></button>
+            <button class="slider-button slider-button_next"></button>
+          
+          </div>
+          <!-- /.slider main container (class swiper)-->
+        </div>
+      </div>
+      <!-- /.hotel-grid -->
     </div>
     <!-- /.container -->
   </section>
   <!-- /.hotel -->
 
+  <!-- slider -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

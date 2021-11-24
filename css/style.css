@@ -976,9 +976,16 @@ img {
   }
   .slider {
     height: 250px;
+    min-width: 250px;
   }
   .hotel__slider {
     margin-bottom: 20px;
+  }
+  .booking {
+    min-width: 250px;
+  }
+  .map {
+    min-width: 250px;
   }
 }
 

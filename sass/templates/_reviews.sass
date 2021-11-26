@@ -76,12 +76,21 @@
 
 .slider
   &-button
-    &_next
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 30px
+    height: 30px
+    background-repeat: no-repeat
+    background-size: 10px
+    background-position: center
+    cursor: pointer
+    &_right
       right: 0
-      background-image: url(../img/arrow-next.svg)
-    &_prev
+      background-image: url(../img/chevron-right.svg)
+    &_left
       left: 0
-      background-image: url(../img/arrow-prev.svg)
+      background-image: url(../img/chevron-left.svg)
 
 .swiper
   &-reviews

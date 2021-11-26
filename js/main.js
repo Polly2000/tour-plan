@@ -24,8 +24,8 @@ const reviewsSlider = new Swiper('.swiper-reviews', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button_next',
-    prevEl: '.slider-button_prev',
+    nextEl: '.slider-button_right',
+    prevEl: '.slider-button_left',
   },
 
   

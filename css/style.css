@@ -1032,14 +1032,27 @@ img {
   max-width: 537px;
 }
 
-.slider-button_next {
-  right: 0;
-  background-image: url(../img/arrow-next.svg);
+.slider-button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+  cursor: pointer;
 }
 
-.slider-button_prev {
+.slider-button_right {
+  right: 0;
+  background-image: url(../img/chevron-right.svg);
+}
+
+.slider-button_left {
   left: 0;
-  background-image: url(../img/arrow-prev.svg);
+  background-image: url(../img/chevron-left.svg);
 }
 
 .swiper-reviews::after {

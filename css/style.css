@@ -1187,9 +1187,6 @@ img {
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
   }
-  .slider {
-    height: 350px;
-  }
   .hotel-right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1226,20 +1223,22 @@ img {
   .reviews__title {
     font-size: 30px;
   }
-  .slider-button {
-    top: 45px;
+  .slider {
+    height: 350px;
   }
   .slider-button_right {
     right: 50%;
     margin-right: -65px;
     -webkit-transform: translate(45%, 0);
     transform: translate(45%, 0);
+    top: 45px;
   }
   .slider-button_left {
     left: 50%;
     margin-left: -65px;
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
+    top: 45px;
   }
 }
 

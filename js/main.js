@@ -35,3 +35,9 @@ const reviewsSlider = new Swiper('.swiper-reviews', {
   },
 
 });
+
+// Parallax
+$('.newsletter').parallax({
+  imageSrc: 'img/subscribe.jpg',
+  speed: 0.4,
+});

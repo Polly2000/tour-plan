@@ -1144,6 +1144,7 @@ img {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
+  color: #333333;
 }
 
 .packages-wrapper {

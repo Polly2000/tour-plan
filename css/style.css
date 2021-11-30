@@ -1482,6 +1482,10 @@ img {
       flex-basis: 48%;
 }
 
+.footer__input:focus {
+  outline: none;
+}
+
 .footer__message {
   background-color: #ffffff;
   border-radius: 4px;
@@ -1489,6 +1493,12 @@ img {
   padding: 18px 23px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  width: 539px;
+  height: 123px;
+}
+
+.footer__message:focus {
+  outline: none;
 }
 
 .footer__button {

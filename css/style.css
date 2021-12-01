@@ -1526,6 +1526,20 @@ img {
   color: #E0E0E0;
 }
 
+.footer__test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1955,6 +1969,21 @@ img {
   }
   .footer__message {
     width: 100%;
+  }
+  .footer__test {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer__info_mt {
+    margin-top: 15px;
+  }
+  .footer__button {
+    margin: 15px 0 0 0;
   }
 }
 

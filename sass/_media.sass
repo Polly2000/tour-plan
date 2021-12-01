@@ -94,6 +94,9 @@
       &-form
         grid-column: span 5
         grid-row: 4
+    &-bottom
+      &__null
+        display: none
 
 @media (max-width: 768px)
   .container
@@ -294,6 +297,13 @@
         margin-top: 15px
     &__button
       margin: 15px 0 0 0
+    &-bottom
+      flex-direction: column
+      align-items: flex-start
+      &_place
+        margin-top: 30px
+      &__image
+        margin-top: 10px
 
 @media (max-width: 320px)
   .newsletter

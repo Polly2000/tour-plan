@@ -424,6 +424,10 @@ img {
   line-height: 18px;
 }
 
+.navbar-menu__item {
+  max-width: 100%;
+}
+
 .navbar-menu__item_visible {
   display: none;
 }

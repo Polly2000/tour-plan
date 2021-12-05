@@ -19,7 +19,7 @@
 
   <!-- styles  -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="css/normalize.css">
 
   <!-- slider -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -138,7 +138,7 @@
           <p class="hotel-description hotel-info__description">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</p>
         </div>
         <!-- /.hotel-info__text -->
-        <div class="rating hotel-info__rating">
+        <div data-toggle="modal" data-href="#rating-modal" class="rating hotel-info__rating">
           <span class="rating__text">User Rating</span>
           <span class="rating__counter">4.5/5</span>
         </div>
@@ -211,7 +211,7 @@
               </a>
             </div>
             <!-- /.booking__call-center -->
-            <button class="button booking__button">View Other Options</button>
+            <button data-toggle="modal" data-href="#booking-modal" class="button booking__button">View Other Options</button>
           </div>
           <!-- /.booking -->
           <div class="map" id="map">
@@ -425,8 +425,8 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="#" class="subscribe newsletter__subscribe">
-          <input type="text" class="subscribe__input" placeholder="Your email address">
+        <form action="send.php" method="post" class="subscribe newsletter__subscribe">
+          <input type="email" class="subscribe__input" placeholder="Your email address" name="emailadress">
           <button class="subscribe__button">Send</button>
         </form>
       </div>
@@ -697,7 +697,7 @@
             <input
              type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
             <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
-            <textarea class="footer__message" placeholder="Message" name="message"></textarea>
+            <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
             <div class="footer__test">
               <button class="button footer__button" type="submit">Send</button>
               <span class="footer__info footer__info_mt">* Required Fields</span>
@@ -725,6 +725,61 @@
   </footer>
   <!-- /.footer -->
 
+  <div class="modal" id="booking-modal">
+    <div class="modal__overlay">
+
+    </div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="Icon: Close">
+      </a>
+      <div class="modal__contacts-form">
+        <h3 class="modal__title modal__title_mb_3">Booking</h3>
+        <form action="send.php" method="post" class="modal__form">
+          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
+          <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
+          <input type="text" class="input modal__input" placeholder="Email*" name="email">
+          <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+          <div class="modal__test">
+            <button class="button modal__button" type="submit">Send</button>
+            <span class="modal__info modal__info_mt">* Required Fields</span>
+          </div>
+        </form>
+      </div>
+      <!-- /.modal__contacts-form -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <div class="modal" id="rating-modal">
+    <div class="modal__overlay">
+
+    </div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="Icon: Close">
+      </a>
+      <div class="modal__contacts-form">
+        <h3 class="modal__title modal__title_mb_3">Send us a feedback</h3>
+        <form action="send.php" method="post" class="modal__form">
+          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
+          <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
+          <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+          <div class="modal__test">
+            <button class="button modal__button" type="submit">Send</button>
+            <span class="modal__info modal__info_mt">* Required Fields</span>
+          </div>
+        </form>
+      </div>
+      <!-- /.modal__contacts-form -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+
   <!-- map -->
   <script src="https://api-maps.yandex.ru/2.1/?apikey=d1b856f8-7f33-4820-adee-35c313fb8a83&lang=ru_RU"></script>
   <script src="js/map.js"></script>
@@ -732,8 +787,10 @@
   <!-- slider -->
   <script src="js/swiper-bundle.min.js"></script>
 
+  <!-- JQuery -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+
   <!-- Parallax -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/parallax.min.js"></script>
 
   <script src="js/main.js"></script>

@@ -8,14 +8,16 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$emailadress = $_POST['emailadress'];
 
 // Формирование самого письма
 $title = "Новое обращение Best Tour Plan";
 $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
+<b>Телефон:</b> $phone<br>
+<b>Сообщение:</b><br>$message<br>
+<b>Электронная почта:</b><br>$emailadress
 ";
 
 // Настройки PHPMailer
@@ -37,7 +39,7 @@ try {
 
     // Получатель письма
     $mail->addAddress('kuzneechik@gmail.com');  
-    $mail->addAddress('youremail@gmail.com'); // Ещё один, если нужен
+    //$mail->addAddress(); // Ещё один, если нужен
 
 // Отправка сообщения
 $mail->isHTML(true);

@@ -97,6 +97,17 @@
     &-bottom
       &__null
         display: none
+  .modal
+    &__dialog
+      padding: 33px 56px
+    &__test
+      flex-direction: column-reverse
+      align-items: flex-start
+    &__info
+      &_mt
+        margin-bottom: 15px
+    &__input
+      max-width: 100%
 
 @media (max-width: 768px)
   .container
@@ -270,6 +281,12 @@
   .footer
     &__input
       flex-basis: 100%
+  .modal
+    &__dialog
+      padding: 33px 40px
+    &__input
+      max-width: 300px
+      padding: 15px
 
 @media (max-width: 576px)
   .logo

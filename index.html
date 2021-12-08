@@ -19,6 +19,7 @@
 
   <!-- styles  -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/normalize.css">
 
   <!-- slider -->
@@ -30,18 +31,18 @@
   <header class="navbar navbar_fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="" class="logo">
+        <a href="" class="logo" data-aos="fade-right" data-aos-delay="100">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
 
-        <form action="#" class="search navbar__search navbar__search_mobile_hidden">
+        <form action="#" class="search navbar__search navbar__search_mobile_hidden" data-aos="fade-right" data-aos-delay="200">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search">
           </button>
         </form>
 
-        <a href="#" class="user navbar__user navbar__user_mobile_hidden">
+        <a href="#" class="user navbar__user navbar__user_mobile_hidden" data-aos="fade-right" data-aos-delay="300">
           <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -531,7 +532,7 @@
     <div class="container">
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
           <img class="card__image" src="img/activity-1.jpg" alt="The curious corner
           of chamarel">
           <h3 class="card__title">The curious corner
@@ -539,7 +540,7 @@
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
           <img class="card__image" src="img/activity-2.jpg" alt="Gymkhana club golf
           course">
           <h3 class="card__title">Gymkhana club golf
@@ -547,7 +548,7 @@
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
           <img class="card__image" src="img/activity-3.jpg" alt="Tamarind falls hiking
           trip - full day">
           <h3 class="card__title">Tamarind falls hiking
@@ -555,7 +556,7 @@
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
           <img class="card__image" src="img/activity-4.jpg" alt="The blue marine discovery
           quest">
           <h3 class="card__title">The blue marine discovery
@@ -800,6 +801,9 @@
 
   <!-- jQuery Mask Plugin -->
   <script src="js/jquery.mask.min.js"></script>
+
+  <!-- AOS Library -->
+  <script src="js/aos.js"></script>
 
   <!-- Parallax -->
   <script src="js/parallax.min.js"></script>

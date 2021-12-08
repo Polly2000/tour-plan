@@ -392,6 +392,11 @@ img {
   cursor: pointer;
 }
 
+.invalid {
+  color: #EC1F46;
+  border-bottom: 2px solid #EC1F46;
+}
+
 .logo {
   width: 177px;
 }
@@ -1516,6 +1521,10 @@ img {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
@@ -1650,17 +1659,21 @@ img {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__input:focus {
   outline: none;
 }
 
+.modal__button {
+  margin-top: 15px;
+}
+
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message:focus {
@@ -1731,7 +1744,7 @@ img {
     width: 230px;
     height: 230px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1813,7 +1826,7 @@ img {
         grid-template-columns: repeat(6, 1fr);
     gap: 40px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
   }
@@ -2129,7 +2142,7 @@ img {
     width: 49%;
     height: 255px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }

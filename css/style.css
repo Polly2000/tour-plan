@@ -1653,6 +1653,10 @@ img {
   color: inherit;
 }
 
+.footer__link-tel_m {
+  padding-left: 10px;
+}
+
 .footer__input {
   width: 100%;
 }

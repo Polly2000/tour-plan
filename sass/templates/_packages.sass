@@ -1,5 +1,5 @@
 .packages
-  padding: 70px 0 70px 0
+  padding: 80px 0 1px 0
   &__title
     font-weight: bold
     font-size: 36px
@@ -22,6 +22,8 @@
   overflow: hidden
   background-color: $dark-color
   color: $light-color
+  &_br
+    border-radius: 8px
   &:first-child
     flex-direction: row
     grid-column: 1/span 2
@@ -46,6 +48,8 @@
     display: flex
     flex-direction: column
     margin-top: 23px
+    &_mt
+      margin-top: 32px
   &__text
     display: flex
     align-items: center
@@ -64,6 +68,10 @@
   &__price
     display: flex
     justify-content: space-between
+    &_mt
+      margin-top: 5px
+    &_mtbig
+      margin-top: 10px
   &__discount
     font-style: normal
     font-weight: normal
@@ -97,13 +105,14 @@
       padding: 8px 12px
       font-size: 12px
     &__info
-      padding: 47px 21px 30px 43px
+      padding: 47px 21px 30px 44px
       display: flex
       flex-direction: column
       justify-content: space-between
     &__rating
       display: flex
       align-items: center
+      margin-bottom: 4px
     &__description
       margin: 0
       max-width: 300px
@@ -111,3 +120,5 @@
       font-weight: normal
       font-size: 14px
       line-height: 160.6%
+      &_mt
+        margin-top: 11px

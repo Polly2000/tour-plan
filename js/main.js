@@ -103,7 +103,8 @@ $('.form').each(function () {
       email: "Your email address must be in the format of name@domain.com"
     },
     phone: {
-      required: "Phone is required"
+      required: "Phone is required",
+      minlength: 16,
     },
   },
 });

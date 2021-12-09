@@ -397,6 +397,12 @@ img {
   border-bottom: 2px solid #EC1F46;
 }
 
+#emailadress-error {
+  position: relative;
+  top: 57px;
+  color: #EC1F46;
+}
+
 .logo {
   width: 177px;
 }
@@ -564,6 +570,27 @@ img {
   padding-bottom: 70px;
 }
 
+.hotel__link {
+  color: #ffffff;
+  background-color: #EC1F46;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 4px;
+  padding: 18px 0 0 45px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  width: 160px;
+  height: 50px;
+}
+
+.hotel__link_mt {
+  margin-top: 50px;
+  margin-left: 0;
+}
+
 .hotel-grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -630,6 +657,18 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.hotel-wrapper-thankyou {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .hotel-description {
@@ -898,6 +937,19 @@ img {
   margin: auto;
 }
 
+.newsletter__subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 170px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
 .newsletter-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -922,9 +974,16 @@ img {
 }
 
 .subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   width: 355px;
-  height: 55px;
+  height: 100px;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -932,13 +991,18 @@ img {
 .subscribe__input {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 55px;
   padding-left: 33px;
   padding-right: 75px;
   border: none;
+  border-radius: 4px;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+}
+
+.subscribe__input:focus {
+  outline: none;
 }
 
 .subscribe__button {
@@ -946,11 +1010,12 @@ img {
   min-width: 65px;
   right: 0;
   top: 0;
-  height: 100%;
+  height: 55px;
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
   cursor: pointer;
+  border-radius: 0px 4px 4px 0px;
 }
 
 .reviews {

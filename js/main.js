@@ -98,6 +98,10 @@ $('.form').each(function () {
       required: "We need your email address to contact you",
       email: "Your email address must be in the format of name@domain.com"
     },
+    emailadress: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com"
+    },
     phone: {
       required: "Phone is required"
     },
@@ -105,6 +109,20 @@ $('.form').each(function () {
 });
 })
 
+$('.test-form').each(function () {
+  $(this).validate({
+    errorClass: "invalid-email",
+    messages: {
+    emailadress: {
+      required: "We need your email adress",
+      email: "Your email address must be in the format of name@domain.com"
+    },
+    }
+  })
+})
+
+
+// Маска для номера телефона
 $(document).ready(function() {
   $('.phone').mask('+7(999)999-99-99');
 });

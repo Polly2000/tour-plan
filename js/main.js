@@ -104,7 +104,7 @@ $('.form').each(function () {
     },
     phone: {
       required: "Phone is required",
-      minlength: 16,
+      minlength: "Phone must be at least 16 digits",
     },
   },
 });
@@ -117,6 +117,10 @@ $('.test-form').each(function () {
     emailadress: {
       required: "We need your email adress",
       email: "Your email address must be in the format of name@domain.com"
+    },
+    phone: {
+      required: "Phone is required",
+      minlength: 16,
     },
     }
   })
